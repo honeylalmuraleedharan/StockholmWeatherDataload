@@ -17,6 +17,7 @@ Historical air pressure observation data from the Stockholm are stored in 7 file
 - stockholm_barometer_1961_2012.txt
 - stockholm_barometer_2013_2017.txt
 - stockholmA_barometer_2013_2017.txt
+
 URL to download the data https://bolin.su.se/data/stockholm/barometer_readings_in_original_units.php     
 
 ### Air temperature observation data
@@ -26,6 +27,7 @@ Historical air temperature observation data from the Stockholm are stored in 5 f
 - stockholm_daily_temp_obs_1961_2012_t1t2t3txtntm.txt
 - stockholm_daily_temp_obs_2013_2017_t1t2t3txtntm.txt
 - stockholmA_daily_temp_obs_2013_2017_t1t2t3txtntm.txt
+
 URL to download the data : https://bolin.su.se/data/stockholm/raw_individual_temperature_observations.php     
 
 ### Assumptions
@@ -37,6 +39,7 @@ URL to download the data : https://bolin.su.se/data/stockholm/raw_individual_tem
 	 - To store this we have added an extra column "weather_station_type".
 	 - The data prior to 2013 "weather_station_type" column value is set to "NaN".
 - Columns 1-3 define the date, starting with 1756 01 01.
+
 	**Note:** *If ***year*** or ***month*** or ***day*** column is null or empty we need to remove the row before storing to Hive tables.*	
 - Tables are partitioned by "year" and "month" column values. 
 

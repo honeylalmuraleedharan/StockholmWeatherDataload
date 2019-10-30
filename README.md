@@ -86,5 +86,5 @@ To build
 1) Login to cluster edge node and navigate to the app_home directory path.
 2) Place the Jar(StockholmWeatherDataload-1.0-jar-with-dependencies.jar) created after maven build to app_home path 
 3) Execute the cmd : 
-`spark-submit --class org.tcs.spark.weather.dataload.loader.StockholmWeatherDataloader  --master <IP Address> StockholmWeatherDataload-1.0-jar-with-dependencies.jar`
+`spark-submit --class org.tcs.spark.weather.dataload.loader.StockholmWeatherDataloader  --master yarn StockholmWeatherDataload-1.0-jar-with-dependencies.jar`
 
